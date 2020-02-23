@@ -4,6 +4,7 @@
   "description": "node mongo restful authentication system",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -40,9 +41,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --ignore-path .gitignore .",
-      "git add",
-      "npx prettier --write"
+      "eslint --fix --ignore-path .gitignore ."
     ]
   }
 }
