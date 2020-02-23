@@ -1,0 +1,31 @@
+{
+  "name": "node_authentication",
+  "version": "1.0.0",
+  "description": "node mongo restful authentication system",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jctubio",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "eslint": "^6.8.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "morgan": "^1.9.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.2",
+    "v-response": "^1.0.0"
+  }
+}
