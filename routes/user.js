@@ -7,12 +7,13 @@ import {
   INVALID_USERNAME,
   INVALID_EMAIL,
   INVALID_PASSWORD,
+  INVALID_EMAIL_OR_PASSWORD,
   USER_ALREADY_EXISTS,
   ERROR_SAVING_USER,
   SERVER_ERROR,
   ERROR_RETRIEVING_USER,
 } from '../constants/messages'
-import { timeToDie } from '../constants/tokenExpiration';
+import { timeToDie } from '../constants/tokenExpiration'
 import User from '../models/User'
 import auth from '../middlewares/auth'
 
@@ -144,7 +145,6 @@ router.post(
 
 router.get('/me', auth, async (req, res) => {
   try {
-    // request.user is getting fetched from Middleware after token authentication
     const user = await User.findById(req.user.id)
       .select('-_id')
       .select('-__v')
