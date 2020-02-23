@@ -41,7 +41,9 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix --ignore-path .gitignore ."
+      "prettier --write",
+			"eslint --fix --ignore-path .gitignore .",
+      "eslint --ignore-path .gitignore ."
     ]
   }
 }

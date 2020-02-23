@@ -1,1 +1,1 @@
-export const timeToDie = '1h'
+export const timeToDie = '1h';
